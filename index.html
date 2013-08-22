@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+			nav ul li {
+			    display: inline-block;
+			    margin: 10px;
+			    padding: 10px;
+			    background: #e5e5e5;
+			    border-radius: 5px;
+			    box-shadow: 0 0 6px rgb(145, 145, 145);
+			}
+			nav ul {
+			    width: 100%;
+			    list-style: none;
+			    padding: 0;
+			    margin: 0;
+			    text-align: center;
+			}
+			#contenido_info {
+			    width: 80%;
+			    margin: 0 auto;
+			    background: rgb(190, 190, 186);
+			    padding: 20px;
+			    overflow: hidden;
+			}
+			.content {
+			    background: rgb(202, 202, 202);
+			}
+			.cabecera {
+			    text-align: center;
+			}
+			.cabecera h1 {
+			    text-transform: uppercase;
+			    font-family: sans-serif;
+			    font-size: 29px;
+			    text-shadow: 0 0 5px gray;
+			}
+
+			#contenido_info article {
+			    float: left;
+			    width: 50%;
+			    text-align: center;
+			}
+			footer {
+			    padding: 20px;
+			    background: rgba(87, 94, 104, 0.5);
+			    color: black;
+			    font-size: 22px;
+			    text-align: center;
+			}
+			a {
+			    text-decoration: none;
+			    color: rgb(56, 53, 53);
+			    font-weight: bolder;
+			}
+			form {
+			    overflow: visible;
+			    background: rgba(255, 255, 255, 0.39);
+			    /* position: relative; */
+			    /* bottom: 0; */
+			    /* float: left; */
+			    /* font-family: sans-serif; */
+			    left: 0;
+			}
+			input {
+			    display: block;
+			    outline: none;
+			    border: 2px solid rgb(56, 103, 117);
+			    padding: 5px;
+			    border-radius: 4px;
+			    background: rgb(228, 228, 228);
+			    -webkit-transition: all .3s ease-in-out;
+			}
+			input[type="submit"] {
+			    border-radius: 5px;
+			    background: rgb(253, 253, 253);
+			    border: none;
+			    padding: 10px 20px;
+			    margin: 15px 0 0 0;
+			    cursor: pointer;
+			}
+			input:focus {
+			    background: white;
+			    border: 2px solid rgb(63, 153, 180);
+			}
+			fieldset {
+			    float: left;
+			    width: auto;
+			    margin: 0 34px 0 35px;
+			    background: rgba(255, 255, 255, 0.39);
+			    margin-top: 5em;
+			}
+			img {
+			    width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="content">
+			<header>
+				<nav>
+					<ul>
+						<li><a href="#">menu 1</a></li>
+						<li><a href="#">menu 2</a></li>
+						<li><a href="#">menu 3</a></li>
+					</ul>
+				</nav>
+				<hgroup class="cabecera">
+					<h1>soy la cabecera</h1>
+				</hgroup>
+			</header>
+			<section id="contenido_info">
+				<article>
+					<header>
+						<hgroup>
+							<h1>Subtitulo 1</h1>
+						</hgroup>
+					</header>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, nemo, dolore, ipsa consequuntur ipsum aliquid pariatur facere aut voluptate obcaecati perferendis molestiae ea assumenda velit doloribus ipsam cum ullam et.
+					</p><p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, nemo, dolore, ipsa consequuntur ipsum aliquid pariatur facere aut voluptate obcaecati perferendis molestiae ea assumenda velit doloribus ipsam cum ullam et.
+					</p><p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, nemo, dolore, ipsa consequuntur ipsum aliquid pariatur facere aut voluptate obcaecati perferendis molestiae ea assumenda velit doloribus ipsam cum ullam et.
+					</p><p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, nemo, dolore, ipsa consequuntur ipsum aliquid pariatur facere aut voluptate obcaecati perferendis molestiae ea assumenda velit doloribus ipsam cum ullam et.
+					</p>
+				</article>
+				<article>
+					<figure>
+						<img src="http://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="">
+						<figcaption>HTML 5</figcaption>
+					</figure>
+				</article>
+				<form action="">
+  					<fieldset>
+						Nombre: <input type="text" autofocus="" placeholder="escribe!!" required="" pattern="[A-Z]{4}">
+						Fecha: <input type="date"> <br>
+						Color: <input type="color"> <br>
+						Week: <input type="week"> <br>
+						Month: <input type="month"> <br>
+						Range: <input type="range" max="50" min="5" step="20"> <br>
+	 
+	  
+						Search: <input type="search"> </fieldset>
+					<fieldset>
+						Telefono: <input type="tel"> <br>
+						Number: <input type="number" max="50" min="5" step="20"> <br>
+						URL: <input type="url"> <br>
+						Email: <input type="email" required=""> <br>
+						File: <input type="file" multiple="">
+						
+  					</fieldset>
+  					<fieldset>
+  						<input type="text" list="navegadores">
+  						<datalist id="navegadores">
+  							<option value="firefox"></option>
+  							<option value="chrome"></option>
+  							<option value="opera"></option>
+  							<option value="zafari"></option>
+  						</datalist>
+  						<input type="submit" value="Enviar">
+  					</fieldset>
+  				</form>
+			</section>
+			<footer>
+				soy un pie de pagina
+			</footer>
+		</section>
+	</body>
+</html>
